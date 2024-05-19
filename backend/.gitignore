@@ -1,0 +1,7 @@
+# Node.js and Express files
+node_modules
+package-lock.json
+.env
+
+# Pool folder
+pool

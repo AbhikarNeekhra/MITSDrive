@@ -1,0 +1,113 @@
+{
+  "collection": {
+    "info": {
+      "name": "MITS DRIVE",
+      "_postman_id": "d2900248-e8c6-4c97-9468-d3eb609b4820",
+	  "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+	  "_exporter_id": "25601473"
+    },
+    "item": [
+      {
+        "name": "Create Folder",
+        "request": {
+          "url": "http://localhost:3000/api/createfolder",
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {"key": "name", "value": "Test Folder"},
+              {"key": "path", "value": "/test/path"},
+              {"key": "access", "value": "public"},
+              {"key": "tags", "value": "tag1,tag2"},
+              {"key": "privacy", "value": "private"},
+              {"key": "category", "value": "documents"}
+            ]
+          }
+        }
+      },
+      {
+        "name": "Upload File",
+        "request": {
+          "url": "http://localhost:3000/api/uploadfile",
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {"key": "path", "value": "/test/path"},
+              {"key": "access", "value": "public"},
+              {"key": "tags", "value": "tag1,tag2"},
+              {"key": "privacy", "value": "private"},
+              {"key": "category", "value": "documents"},
+              {"key": "file", "type": "file", "src": "/path/to/file.txt"}
+            ]
+          }
+        }
+      },
+      {
+        "name": "Edit File",
+        "request": {
+          "url": "http://localhost:3000/api/editfile",
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {"key": "path", "value": "/test/path"},
+              {"key": "access", "value": "public"},
+              {"key": "owner", "value": "new_owner"},
+              {"key": "tags", "value": "tag3,tag4"},
+              {"key": "privacy", "value": "public"},
+              {"key": "category", "value": "images"},
+              {"key": "type", "value": "file"}
+            ]
+          }
+        }
+      },
+      {
+        "name": "Delete File",
+        "request": {
+          "url": "http://localhost:3000/api/deletefile",
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {"key": "path", "value": "/test/path"},
+              {"key": "type", "value": "folder"}
+            ]
+          }
+        }
+      },
+      {
+        "name": "Restore File",
+        "request": {
+          "url": "http://localhost:3000/api/restorefile",
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {"key": "path", "value": "/test/path"}
+            ]
+          }
+        }
+      },
+      {
+        "name": "Favorite File",
+        "request": {
+          "url": "http://localhost:3000/api/Favorite",
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {"key": "path", "value": "/test/path"}
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

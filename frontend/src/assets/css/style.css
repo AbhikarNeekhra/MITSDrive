@@ -1,0 +1,863 @@
+.ele {
+    height: 60px;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 19px;
+    margin: 2vh 1vw 2vh 1vw;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.ele:hover {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.ele .name {
+    height: 5vh;
+    width: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ele .name img {
+    height: 4.9vh;
+    width: 4.9vh;
+    margin-right: 5px;
+}
+
+.ele .name input {
+    height: 15px;
+    width: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.ele .size {
+    width: 12vw;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.ele .size:hover {
+    text-decoration: underline;
+}
+
+.ele .name:hover {
+    text-decoration: underline;
+}
+
+.ele .modify:hover {
+    text-decoration: underline;
+}
+
+.ele .type {
+    display: grid;
+    place-items: center;
+}
+
+.ele .modify {
+    width: 20vw;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.ele .share {
+    display: grid;
+    place-items: center;
+}
+
+.ele .share .circleholder {
+    height: 5.5vh;
+    width: 9vw;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.ele .share .circleholder .circles {
+    height: 4.5vh;
+    width: 4.5vh;
+    border-radius: 50%;
+    top: 10%;
+}
+
+.ele .share .circleholder .circles:nth-child(1) {
+    position: absolute;
+    z-index: 4;
+    border: 2px solid white;
+    left: 4%;
+}
+
+.ele .share .circleholder .circles:nth-child(2) {
+    position: absolute;
+    z-index: 3;
+    border: 2px solid white;
+    left: 15%;
+}
+
+.ele .share .circleholder .circles:nth-child(3) {
+    position: absolute;
+    z-index: 2;
+    border: 2px solid white;
+    left: 30%;
+}
+
+.ele .star {
+    color: gold;
+    visibility: hidden;
+    margin-bottom: 27px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+.ele .star:before {
+    content: "\2606";
+    visibility: visible;
+}
+
+.ele .star:checked:before {
+    content: "\2605";
+}
+
+.whole {
+    width: 100%;
+}
+
+.file-icon-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 7px 7px 15px -3px,
+        rgba(0, 0, 0, 0.05) 10px 10px 6px -2px;
+}
+
+.file-icon-card {
+    width: 12.75vw;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+            rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 5px;
+}
+
+.file-icon-card .icon {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+ .file-icon-card .icon img{
+    height: 90px;
+}
+
+.file-icon-card h2 {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.file-icon-card p {
+    margin: 0;
+}
+
+.file-icon-card .share {
+    display: flex;
+}
+
+.file-icon-card .share .circleholder {
+        height: 55px;
+            width: 150px;
+            display: flex;
+            position: relative;
+}
+
+.file-icon-card .share .circleholder .circles {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 10%;
+}
+
+.file-icon-card .share .circleholder .circles:nth-child(1) {
+    position: absolute;
+    z-index: 4;
+    border: 2px solid white;
+}
+
+.file-icon-card .share .circleholder .circles:nth-child(2) {
+    position: absolute;
+    z-index: 3;
+    border: 2px solid white;
+    left: 13%;
+}
+
+.file-icon-card .share .circleholder .circles:nth-child(3) {
+    position: absolute;
+    z-index: 2;
+    border: 2px solid white;
+    left: 26%;
+}
+
+.file-icon-card .star {
+    color: gold;
+    visibility: hidden;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.file-icon-card .star:before {
+    content: "\2606";
+    visibility: visible;
+}
+
+.file-icon-card .star:checked:before {
+    content: "\2605";
+}
+
+.MuiTableCell-root{
+    text-align: center;
+    width:45vh;
+}
+
+.MuiButtonBase-root{
+    margin-left: 11px;
+}
+
+div#chart svg.apexcharts-svg {
+    height: 200px !important;
+}
+
+div#chart text.apexcharts-text{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+
+div#chart p{
+    font-size: 15px !important;
+        font-weight: 600 !important;
+        margin-top: -40px;
+        color: rgb(141 141 141);
+}
+
+.centerButtons {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.centerButtons button {
+    height: 20vh;
+    width: 20vw;
+    font-size: 4.3rem;
+    cursor: pointer;
+    border-radius: 8em;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    height: 100vh;
+    width: 300px;
+    border-radius: 13px 0px 0px 13px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background-color: white;
+    transition: all 0.7s ease-in-out;
+    z-index: 10000000;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 9px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #363636a6;
+}
+
+.sidebar.show {
+    height: 100vh;
+    width: 21vw;
+    border-radius: 13px 0px 0px 13px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.7s ease-in-out;
+    z-index: 10000000;
+}
+
+.sidebar .ifo {
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 1.9);
+    margin-bottom: 4vh;
+    border-radius: 13px;
+}
+
+.sidebar .ifo p {
+    margin-left: 1.3vw;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sidebar .ifo .cross2 {
+    height: 30px;
+    cursor: pointer;
+    width: 30px;
+    margin-right: 1.5vw;
+}
+
+.sidebar .detail {
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4vh;
+    border-radius: 13px;
+}
+
+.sidebar .detail img {
+    height: 10vh;
+    width: 10vh;
+    margin-left: 2.5vh;
+    margin-top: 1.8vh;
+}
+
+.sidebar .tag {
+    height: 7.7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 13px;
+}
+
+.sidebar p {
+    margin-left: 20px !important;
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sidebar .tag img {
+    height: 25px;
+    width: 25px;
+    margin-right: 1.5vw;
+    border-radius: 50%;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.sidebar .tag img:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .tagDetails {
+    height: 20vh;
+    width: 90%;
+    border-radius: 13px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 3vh;
+    border: 2px solid gray;
+    transition: all 0.1s ease-in-out;
+    display: none;
+}
+
+.sidebar .tagDetails:hover {
+    border: 2px solid black;
+}
+
+.sidebar .tagDetails.dis {
+    height: 20vh;
+    width: 90%;
+    border-radius: 13px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 3vh;
+    border: 2px solid gray;
+    transition: all 0.1s ease-in-out;
+    display: block;
+}
+
+.sidebar .propert {
+    height: 7.7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    background-color: white;
+    border-radius: 13px;
+}
+
+.sidebar .propert img {
+    height: 25px;
+    width: 25px;
+    margin-right: 1.5vw;
+    border-radius: 50%;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.sidebar .propert img:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.tabla {
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.4s ease-in-out;
+    display: none;
+}
+
+.tabla.dis {
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.4s ease-in-out;
+    display: table;
+}
+
+.sidebar .shared {
+    height: 7.7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    background-color: white;
+    border-radius: 13px;
+    margin-bottom: 2vh;
+}
+
+.sidebar .shared img {
+    height: 30px;
+    width: 30px;
+    margin-right: 1.5vw;
+    border-radius: 50%;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.sharewith {
+    max-height: 37vh;
+    width: 100%;
+    margin: auto;
+}
+
+.delButton {
+    height: 8vh;
+    width: 87%;
+    margin: auto;
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    font-weight: 700;
+    color: white;
+    background: rgba(255, 0, 0, 0.795);
+    font-size: 1.9rem;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: none;
+    transition: all 0.1s ease-in-out;
+    border-radius: 13px;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.475);
+}
+
+.delButton:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+.delButton img {
+    height: 34px;
+    width: 34px;
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SharedModal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+}
+
+.SharedModal .center h1 {
+    height: 4vh;
+    width: fit-content;
+    margin: 0;
+    margin-left: 2vh;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 2vh;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.SharedModal .center {
+    height: 65vh;
+    width: 30vw;
+    background-color: white;
+}
+
+.SharedModal .center .upper {
+    height: 7vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw 0 2vw;
+    margin-top: 2vh;
+}
+
+.SharedModal .center .upper input {
+    height: 5vh;
+    width: 70%;
+    border: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all 0.3s ease-in-out;
+}
+
+.SharedModal .center .upper input:focus {
+    outline: none;
+    border-radius: 9em;
+}
+
+.SharedModal .center .upper button {
+    height: 5vh;
+    width: 20%;
+    border-radius: 9em;
+    border: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    cursor: pointer;
+}
+
+.SharedModal .center .upper button:active {
+    scale: 0.9;
+}
+
+.SharedModal .center .participants {
+    height: 35vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 1vh;
+    overflow-y: scroll;
+}
+
+.SharedModal .center .up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2vw;
+}
+
+.SharedModal .center .up .cross {
+    display: grid;
+    place-items: center;
+}
+
+.SharedModal .center .up img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+.SharedModal .center .participants::-webkit-scrollbar {
+    display: none;
+}
+
+.SharedModal .center .participants {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.SharedModal .center .participants .element {
+    height: 8vh;
+    width: 100%;
+    margin: auto;
+    margin-top: 0.6vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.SharedModal .center .foot {
+    height: 8vh;
+    width: 65%;
+    margin: auto;
+    margin-top: 2.5vh;
+    font-size: 1.9rem;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+}
+
+.SharedModal .center .foot:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.SharedModal .center .foot:active {
+    scale: 0.94;
+}
+
+.SharedModal .center .participants .element img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.SharedModal .center .participants .element .texx {
+    height: 100%;
+    width: 60%;
+    padding-left: 1vh;
+}
+
+.SharedModal .center .participants .element .texx .name {
+    margin-top: 0.6vh;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.SharedModal .center .participants .element .texx .mail {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sharewith .participants .element .option {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SharedModal .center .participants .element .option select {
+    height: 70%;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 9em;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.SharedModal .center .participants .element .option select:focus {
+    outline: none;
+}
+
+.sharewith {
+    overflow: hidden;
+}
+
+.sharewith .participants {
+    height: 35vh;
+    width: 100%;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.sharewith .participants::-webkit-scrollbar {
+    display: none;
+}
+
+.sharewith .participants {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.sharewith .participants .element {
+    height: 8vh;
+    width: 100%;
+    margin: auto;
+    margin-top: 0.6vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sharewith .participants .element .circle {
+    display: grid;
+    place-items: center;
+}
+
+.sharewith .participants .element img {
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+}
+
+.sharewith .participants .element .texx {
+    height: 100%;
+    width: 60%;
+    padding-left: 1vh;
+}
+
+.sharewith .participants .element .texx .name {
+    margin-top: 1.7vh;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sharewith .participants .element .texx .mail {
+    font-weight: 600;
+    margin-top: -0.5vh;
+}
+
+.sharewith .participants .element .option {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharewith .participants .element .option select {
+    height: 70%;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 9em;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.sharewith .participants .element .option select:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1250px) {
+    .file-icon-card {
+            width: 15vw;
+        }
+}
+
+@media only screen and (max-width: 1060px) {
+    .ele .share{
+        display: none;
+    }
+        .file-icon-card {
+            width: 14.35vw;
+        }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .file-icon-card {
+        width: 18vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .file-icon-card {
+        width: 25vw;
+    }
+    .responsive-horizontal{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ele .modify {
+        display: none;
+    }
+        .file-icon-card{
+            width: 35vw;
+            margin: 5px;
+        }
+        .responsive-icon-button{
+            font-size: 0 !important;
+            padding-left: 23px !important;
+        }
+}
+
+@media only screen and (max-width: 407px) {
+    .ele .star {
+        display: none;
+    }
+    .file-icon-card{
+        width: 65vw;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .ele .size {
+        display: none;
+    }
+}
+
+.MuiModal-root{
+    margin: 20px;
+    margin-left: 40px;
+}
